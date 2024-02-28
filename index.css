@@ -1,0 +1,490 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* Header & Navigation section */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(3, 3, 60);
+  box-shadow: 0 5px 10px black;
+  padding: 0px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+header .logo {
+  font-weight: bolder;
+  font-size: 30px;
+  color: white;
+}
+
+header .navbar ul {
+  list-style: none;
+}
+
+header .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+header .navbar ul li a {
+  font-size: 20px;
+  padding: 12px 30px;
+  color: white;
+  display: block;
+}
+
+header .navbar ul li a:hover {
+  border: solid white 1.5px;
+  border-radius: 10px;
+}
+
+header .navbar ul li:focus-within>ul,
+header .navbar ul li:hover>ul {
+  display: initial;
+}
+
+#menu-bar {
+  display: none;
+}
+
+header label {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+.img {
+  border-radius: 50%;
+}
+
+
+
+/* CSS of box1 */
+
+.box1 {
+  padding-top: 8%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(3, 3, 60);
+  color: white;
+
+}
+
+.para {
+  font-size: 30px;
+  margin: 0px;
+  margin-top: 50px;
+}
+
+.btn {
+  align-items: center;
+  padding: 17px 45px;
+  background-color: rgb(2, 2, 31);
+  border-radius: 22px;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 20px;
+}
+
+.btn a {
+  color: white;
+}
+
+.btns {
+  margin: 30px 80px;
+}
+
+.box1 .icon1 i {
+  border: solid rgb(49, 45, 134) 1.5px;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.box1 .icon1 i:hover {
+  background-color: rgb(0, 30, 255);
+  box-shadow: 0 0 15px rgb(0, 30, 255);
+}
+
+.box1 .second1 {
+  margin: 30px;
+  justify-content: center;
+}
+
+
+/* CSS of box2 */
+
+.box2{
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #a5acb9;
+}
+
+.box2_1,
+.box2_2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skill {
+  text-align: center;
+  padding: 3%;
+  color: white;
+}
+
+.skill span{
+  color: #24385b;
+} 
+
+.box2_11 {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 2%;
+  background-color: #24385b;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  margin: 2%;
+}
+
+.box2_11:hover {
+  background-color: rgb(176, 176, 176);
+  color: #1e2d48;
+  box-shadow: 0 0 15px rgb(71, 70, 70);
+  position: relative;
+  bottom: 7px;
+}
+
+.box2_11 i {
+  background-color: transparent;
+  font-size: 30px;
+}
+
+.box2 h3{
+  font-weight: 700;
+  font-size: 25px;
+}
+
+
+
+
+/* CSS of box4 */
+
+
+.box4{
+      display: flex;
+      justify-content: space-around;
+      justify-self: center;
+      margin: 0px;
+    }
+
+    .box4_1{
+      align-items: center;
+    }
+
+    .box4_2{
+      max-width: 100%;
+    }
+
+    .box4_2 .img2{
+        display: none;
+      }
+
+    form{
+      background-color: white;
+      margin: 30px;
+    }
+
+    .contact_head{
+      font-size: 40px;
+      margin: 30px;
+      position: relative;
+      left: 32%;
+    }
+    
+    form p{
+      padding: 10px;
+    }
+
+    input, textarea{
+      border-radius: 20px;
+      padding: 15px 50%;
+      background-color: #24385b;
+      color: #ffffff;
+    }
+
+    ::placeholder{
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 15px;
+    }
+
+
+    textarea{
+      padding: 50px 50%;
+    }
+
+    .submit{
+      margin: 20px;
+      padding: 8px 10%;
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: 500;
+      position: relative;
+      left: 50%;
+    }
+
+    .submit:hover{
+       background-color: beige;
+       color: navy;
+       box-shadow: 0 0 25px rgb(0, 30, 255);
+    }
+
+
+/* Footer section */
+
+footer {
+  padding: 3% 20%;
+  background-color: rgb(1, 1, 42);
+  color: white;
+  text-align: center;
+}
+
+footer h3{
+  font-size: 17px;
+  font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:1150px) {
+  .btn {
+    padding: 15px 35px;
+    font-size: 15px;
+    margin: 18px;
+  }
+}
+
+
+
+@media(max-width:1075px) {
+.logo{
+font-size: 20px;
+}
+
+  .box2_11 h3 {
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .box2_11 p {
+    font-size: 12px;
+  }
+
+  .box2_11 {
+    margin: 1%;
+  }
+
+  .box2_11 i {
+  font-size: 30px;
+}
+}
+
+
+
+
+
+@media(max-width:975px) {
+
+  header {
+    padding: 20px;
+  }
+
+  header .logo{
+    font-size: 25px;
+  }
+
+  header label {
+    display: initial;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #242424;
+    border-top: 1px solid #292929;
+    display: none;
+  }
+
+  header .navbar ul li {
+    width: 100%;
+  }
+
+  #menu-bar:checked~.navbar {
+    display: initial;
+  }
+
+
+  .btn {
+    padding: 12px 30px;
+    font-size: 12px;
+    margin: 18px;
+    border-radius: 10px;
+  }
+
+  /* css of box3 */
+
+  .contact_head{
+      font-size: 35px;
+    }
+
+    input{
+      padding: 12px 38%;
+    }
+
+    textarea{
+      padding: 25px 40%;
+    }
+
+    ::placeholder{
+      font-size: 12px;
+    }
+
+    .box4_2{
+      max-width: 50%;
+    }
+
+    .submit{
+      margin: 5px;
+    }
+
+    .box4_2 .img1{
+        display: none;
+      }
+
+      .box4_2 .img2{
+        display: initial;
+      }
+
+}
+
+
+
+
+
+
+
+@media(max-width:875px) {
+  .skill {
+    font-size: 25px;
+  }
+
+  .box2_11 {
+    margin: 1%;
+  }
+
+  .box2_11 h3 {
+    font-size: 15px;
+  }
+
+  .box2_11 p {
+    font-size: 10px;
+  }
+
+  .box2_11 i {
+  font-size: 25px;
+}
+
+}
+
+@media(max-width:575px) {
+
+  .skill {
+    font-size: 28px;
+  }
+
+  .box2_1,
+  .box2_2 {
+    display: inline;
+    justify-content: space-around;
+  }
+
+  .box2_11 {
+    margin: 8px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .box2_11 h3 {
+    font-size: 15px;
+  }
+
+  .box2_11 p {
+    font-size: 10px;
+  }
+
+  .box4_2{
+        display: none;
+      }
+
+      /* box 3 */
+
+      .box4_2 .img2{
+        display: none;
+      }
+
+      input, textarea{
+      padding: 10px 30%;
+    }
+
+    .contact_head{
+      font-size: 28px;
+      margin: 20px;
+      position: relative;
+      left: 25%;
+    }
+
+    textarea{
+      padding: 40px 33%;
+    }
+
+    .submit{
+      margin-bottom: 20px;
+      padding: 5px 10%;
+    }
+
+    form{
+      margin: 0;
+    }
+
+}
